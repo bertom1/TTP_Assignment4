@@ -8,13 +8,15 @@
         <link rel="stylesheet" href="./style.css">
     </head>
     <body>
-        <script src="script.js"> defer</script>
-        <form action="" method="">
-            <button id="button1" type="submit">submit</button>
+        <button id="button1" type="button">Click</button>
             <br>
+            <p id="text"></p>
             <br>
-            <br>
-            <button id="button2" type="submit">submit</button>
-        </form>
+        <button id="button2" type="button">Click</button>
+        <!-- <script defer src="script.js"></script> -->
+        <script>
+            document.getElementById("button1").addEventListener("click", () => document.getElementById("text").innerHTML = "I'm right")
+            document.getElementById("button2").addEventListener("click", () => document.getElementById("text").innerHTML = "No, I'm right!")
+        </script>
     </body>
 </html>
