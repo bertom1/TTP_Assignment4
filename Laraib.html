@@ -5,6 +5,9 @@
 <script src = script.js></script>
 </head>
 <body>
+    <h1>
+        Please Enter The Information Below
+    </h1>
     <p>
         
         <label>Enter username:</label></br>
@@ -28,9 +31,17 @@
     </p>
     <p>
       <input type="submit" 
-            onclick="checkPassword()" 
+            onclick="checkPassword(document.getElementById('password').value)" 
              value="Submit">
     </p>
+    <script>
+        function checkPassword(password){
+            if (password== 12345678)
+                return alert("THE PASSWORD IS CORRECT");
+            else 
+                return alert("THE PASSWORD IS INCORRECT PLEASE TRY AGAIN");
+        }
+    </script>
 
 </body>
 </html> 
