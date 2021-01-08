@@ -1,0 +1,40 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding: 50px;
+  background-color: aliceblue;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+p {
+  text-align: center;
+}
+#MyHeader {
+  text-align: center;
+}
+#problem2 {
+  height: 200px;
+  background-color: white;
+  font-size: 24px;
+}
+#problem2 p {
+    padding-top: 80px;
+}
+#text {
+  text-align: unset;
+}
+
+.navigation li {
+  padding: 10px;
+  display: inline;
+}
